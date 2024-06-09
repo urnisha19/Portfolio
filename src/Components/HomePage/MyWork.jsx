@@ -6,7 +6,6 @@ import penguin from '../../assets/Projects/Penguin Fashion.png';
 import weather from '../../assets/Projects/Weather.png';
 import flight from '../../assets/Projects/Flight Booking.png';
 import { Link } from 'react-router-dom';
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const MyWork = () => {
     return (
@@ -36,8 +35,7 @@ const MyWork = () => {
                 </div>
             </div>
             <Link to="/projects" className="btn my-5 flex items-center bg-lavender hover:text-purple-700">
-                <p className="text-xl mr-2">See my projects</p>
-                <FaArrowAltCircleRight />
+                <p className="text-xl mr-2">Click here to see my projects</p>
             </Link>
 
         </div>
