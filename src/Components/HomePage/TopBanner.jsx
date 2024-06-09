@@ -14,7 +14,7 @@ const TopBanner = () => {
                     I believe web development is the field where I can show my creativity by best use of my merit and skills.
                 </p>
                 <div className="mt-6">
-                    <a href="https://drive.google.com/file/d/1f5Naq7-m4IzwdYUkV9H8Ipyoslxp9ji3/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1f5Naq7-m4IzwdYUkV9H8Ipyoslxp9ji3/view?usp=sharing" target='_blank'>
                         <button className="border-2 border-purple-700 text-lg font-semibold px-4 py-2 hover:bg-purple-700 hover:text-white transition-colors duration-300">
                             Resume
                         </button>
@@ -24,13 +24,13 @@ const TopBanner = () => {
                     <p className='text-center m-3'>Let's Connect</p>
                 </div>
                 <div className="mt-6 space-x-4">
-                    <a href="https://www.linkedin.com/in/urnisha199/">
+                    <a href="https://www.linkedin.com/in/urnisha199/" target='_blank'>
                         <FontAwesomeIcon icon={faLinkedin} className="text-gray-500 text-2xl transition-transform duration-500 hover:text-purple-700 hover:rotate-360" />
                     </a>
-                    <a href="https://github.com/urnisha19">
+                    <a href="https://github.com/urnisha19" target='_blank'>
                         <FontAwesomeIcon icon={faGithubSquare} className="text-gray-500 text-2xl transition-transform duration-500 hover:text-purple-700 hover:rotate-360" />
                     </a>
-                    <a href="https://medium.com/@urnisha09">
+                    <a href="https://medium.com/@urnisha09" target='_blank'>
                         <FontAwesomeIcon icon={faMediumM} className="text-gray-500 text-2xl transition-transform duration-500 hover:text-purple-700 hover:rotate-360" />
                     </a>
                 </div>

@@ -61,9 +61,9 @@ const ProjectsPage = () => {
 
     return (
         <div>
-            <section className="projects py-12 mx-16">
+            <section className="projects py-12 mx-16 text-center"> {/* Added text-center class */}
                 <div className="container mx-auto">
-                    <h1 className="text-center text-4xl font-bold mb-3 text-purple-700">My Works</h1>
+                    <h1 className="text-4xl font-bold mb-3 text-purple-700">My Works</h1>
                     <hr className="mx-auto w-1/2 border-t-2 border-steelBlue" />
                     <hr className="mx-auto w-1/3 border-t-2 border-steelBlue my-4" />
                     <div className="flex flex-wrap justify-center">
@@ -71,12 +71,12 @@ const ProjectsPage = () => {
                             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
                                 <div className="card bg-white hover:bg-lavender shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 rounded-lg overflow-hidden">
                                     <img className="card-img-top w-full h-48 object-cover" src={project.image} alt={project.title} />
-                                    <div className="card-body p-4">
-                                        <h5 className="card-title text-xl font-semibold mb-2">{project.title}</h5>
-                                        <p className="card-text text-gray-700 mb-4">{project.description}</p>
+                                    <div className="card-body p-4 text-center">
+                                        <h5 className=" text-xl font-semibold mb-2 text-center">{project.title}</h5>
+                                        <p className="card-text text-gray-700 mb-4 text-center">{project.description}</p>
                                         <div className="flex justify-between">
-                                            <a href={project.sourceCode} className="btn bg-gray-800 text-white hover:bg-gray-700 px-4 py-2 rounded-lg">Source Code</a>
-                                            <a href={project.liveSite} className="btn bg-gray-800 text-white hover:bg-gray-700 px-4 py-2 rounded-lg">Live Site</a>
+                                            <a href={project.sourceCode} target='_blank' className="btn bg-purple-500 text-white hover:bg-gray-700 px-4 py-2 rounded-lg mx-5">Source Code</a>
+                                            <a href={project.liveSite} target='_blank' className="btn bg-purple-500 text-white hover:bg-gray-700 px-4 py-2 rounded-lg mx-5">Live Site</a>
                                         </div>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
     return (
-        <nav className="bg-lavender mb-5 py-4 shadow-md">
+        <nav className="bg-lavender mb-5 py-4 shadow-md mx-1">
             <div className="container mx-auto flex justify-between items-center">
                 <Link to="/">
                     <img src={logo} alt="logo" className="h-10" />

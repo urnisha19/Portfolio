@@ -8,7 +8,7 @@ const Footer = () => {
       <p className="text-sm">
         @Designed & Built by{' '}
         <a
-          href="https://www.linkedin.com/in/urnisha199/"
+          href="https://www.linkedin.com/in/urnisha199/" target='_blank'
           className="text-purple-700 hover:text-purple-500 transition-colors duration-300"
         >
           Nahia Nowreen Urnisha
@@ -17,13 +17,13 @@ const Footer = () => {
       <section className="text-center py-8">
       <p className="text-sm">Connect With Me</p>
         <div className="contact-links">
-          <a href="https://www.linkedin.com/in/urnisha199/" className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
+          <a href="https://www.linkedin.com/in/urnisha199/" target='_blank' className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/urnisha19" className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
+          <a href="https://github.com/urnisha19" target='_blank' className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>
-          <a href="https://medium.com/@urnisha09" className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
+          <a href="https://medium.com/@urnisha09"  target='_blank' className="text-slategray hover:text-purple-700 mx-2 text-2xl transition-transform duration-500 transform hover:rotate-360">
             <FontAwesomeIcon icon={faMediumM} />
           </a>
         </div>

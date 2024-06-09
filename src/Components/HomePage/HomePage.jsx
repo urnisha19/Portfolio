@@ -1,3 +1,4 @@
+import MyWork from "./MyWork";
 import Skills from "./Skills";
 import TopBanner from "./TopBanner";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
         <div>
             <TopBanner />
             <Skills/>
+            <MyWork/>
         </div>
     );
 };
