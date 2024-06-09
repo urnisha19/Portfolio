@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navBar-link {
+    @apply px-5 py-2 font-bold text-black border-b-4 border-transparent transition duration-500 ease-in-out text-lg;
+}
+
+.navBar-link:hover {
+    @apply text-purple-700 border-purple-700;
+}
