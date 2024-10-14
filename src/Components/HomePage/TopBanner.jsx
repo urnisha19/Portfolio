@@ -14,7 +14,7 @@ const TopBanner = () => {
                     I believe web development is the field where I can show my creativity by best use of my merit and skills.
                 </p>
                 <div className="mt-6">
-                    <a href="https://drive.google.com/file/d/1f5Naq7-m4IzwdYUkV9H8Ipyoslxp9ji3/view?usp=sharing" target='_blank'>
+                    <a href="https://drive.google.com/file/d/15cTr-O9J17pB738llkNnnoYwuwbesI50/view?usp=sharing" target='_blank'>
                         <button className="border-2 border-purple-700 text-lg font-semibold px-4 py-2 hover:bg-purple-700 hover:text-white transition-colors duration-300">
                             Resume
                         </button>

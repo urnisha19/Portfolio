@@ -69,7 +69,7 @@ const AboutPage = () => {
                                 📧 Feel free to reach out to me at <a href="mailto:urnisha09@gmail.com" className="text-purple-700 hover:underline">urnisha09@gmail.com</a>
                             </p>
                             <div className="flex justify-center mt-8">
-                                <a href="https://drive.google.com/file/d/1f5Naq7-m4IzwdYUkV9H8Ipyoslxp9ji3/view?usp=sharing" target='_blank' rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/15cTr-O9J17pB738llkNnnoYwuwbesI50/view?usp=sharing" target='_blank' rel="noopener noreferrer">
                                     <button type="button" className="bg-gray-800 text-white hover:bg-gray-700 py-2 px-6 rounded-lg text-lg">Download My Resume</button>
                                 </a>
                             </div>
