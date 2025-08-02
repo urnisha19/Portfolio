@@ -1,4 +1,3 @@
-
 const Skills = () => {
   const skills = [
     { name: "HTML5", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" },
@@ -18,20 +17,28 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-white py-12 mx-10">
-      <div className="container mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-6">Technical Skills</h2>
-        <div className="flex flex-wrap justify-center">
+    <section className="bg-white py-12 mx-4 md:mx-16">
+      <div className="container mx-auto text-center px-4">
+        <h2 className="text-3xl font-bold mb-8 text-rebeccapurple">Technical Skills</h2>
+        <div className="flex flex-wrap justify-center gap-8">
           {skills.map((skill, index) => (
-            <div key={index} className="m-4">
-              <span className="block w-20 h-20 p-5">
-                <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
-              </span>
-              <p className="mt-2 text-gray-700">{skill.name}</p>
+            <div
+              key={index}
+              className="flex flex-col items-center w-24 sm:w-28 md:w-32 transition-transform hover:scale-110"
+              title={skill.name}
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                loading="lazy"
+                draggable={false}
+              />
+              <p className="mt-3 text-gray-700 font-medium">{skill.name}</p>
             </div>
           ))}
         </div>
-        <hr className="mt-6 w-1/2 mx-auto border-gray-300" />
+        <hr className="mt-10 w-1/2 mx-auto border-gray-300" />
       </div>
     </section>
   );

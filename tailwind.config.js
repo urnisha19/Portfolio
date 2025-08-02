@@ -8,23 +8,33 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        lavender: '#E6E6FA',
+        rebeccapurple: '#663399',
+        steelBlue: '#4682B4', // Added based on your projects page
+        slateGray: '#708090',
+      },
+      fontFamily: {
+        // You can customize this or add a Google font here
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       animation: {
-        'pulse': 'pulse 8s ease infinite',
+        pulseSlow: 'pulse 8s ease-in-out infinite',
       },
       keyframes: {
-        'pulse': {
+        pulse: {
           '0%, 100%': { letterSpacing: '0px' },
           '50%': { letterSpacing: '20px' },
         },
       },
-      colors: {
-        lavender: '#E6E6FA', // Define your custom lavender color
-        rebeccapurple: '#663399'
-      },
     },
     variants: {
       extend: {
-        rotate: ['hover'],
+        rotate: ['hover', 'focus'],
+        ringWidth: ['focus'],
+        ringColor: ['focus'],
+        backgroundColor: ['hover', 'focus'],
+        textColor: ['hover', 'focus'],
       },
     },
   },
@@ -32,6 +42,6 @@ export default {
     daisyui,
   ],
   daisyui: {
-    themes: ["light"],
+    themes: ['light'],
   },
 };
