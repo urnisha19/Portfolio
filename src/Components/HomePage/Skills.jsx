@@ -8,8 +8,8 @@ const Skills = () => {
     { name: "Node.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
     { name: "Express", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" },
     { name: "MongoDB", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" },
-    { name: "Zustand", icon: "https://raw.githubusercontent.com/pmndrs/zustand/main/bear.jpg" }, // Zustand logo
-    { name: "Odoo ERP", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/odoo/odoo-original-wordmark.svg" },
+    { name: "Zustand", icon: "https://repository-images.githubusercontent.com/181491595/5ee9e380-bafe-11ea-9bbd-327c5e227df2" },
+    { name: "Odoo ERP", icon: "https://cdn.worldvectorlogo.com/logos/odoo.svg" },
     { name: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
     { name: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
     { name: "Git", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
