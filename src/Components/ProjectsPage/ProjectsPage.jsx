@@ -6,9 +6,18 @@ import penguin from "../../assets/Projects/Penguin Fashion.png";
 import weather from "../../assets/Projects/Weather.png";
 import flight from "../../assets/Projects/Flight Booking.png";
 import eventPick from "../../assets/Projects/EventPick.png";
+import exchangeSite from "../../assets/Projects/Exchange Site.png"
 
 const ProjectsPage = () => {
   const projects = [
+     {
+      title: "Exchange Site",
+      description:
+        "Engineered a secure full-stack MERN currency exchange platform featuring real-time rate calculation, volume-based pricing tiers, and a robust admin dashboard to manage orders, reserves, and dynamic site branding.",
+      image: exchangeSite,
+      sourceCode: "https://github.com/urnisha19/Exchange-Site_MongoDB",
+      liveSite: "https://exchange-site-mongo-db.vercel.app/",
+    },
     {
       title: "EventPick",
       description:
