@@ -6,7 +6,7 @@ import penguin from "../../assets/Projects/Penguin Fashion.png";
 import weather from "../../assets/Projects/Weather.png";
 import flight from "../../assets/Projects/Flight Booking.png";
 import eventPick from "../../assets/Projects/EventPick.png";
-import exchangeSite from "../../assets/Projects/Exchange Site.png"
+import exchangeSite from "../../assets/Projects/Exchange Site.png";
 
 const ProjectsPage = () => {
   const projects = [
@@ -15,7 +15,7 @@ const ProjectsPage = () => {
       description:
         "Engineered a secure full-stack MERN currency exchange platform featuring real-time rate calculation, volume-based pricing tiers, and a robust admin dashboard to manage orders, reserves, and dynamic site branding.",
       image: exchangeSite,
-      sourceCode: "https://github.com/urnisha19/Exchange-Site_MongoDB",
+      sourceCode: "https://github.com/urnisha19/Exchange-Site_MongoDB_Backend",
       liveSite: "https://exchange-site-mongo-db.vercel.app/",
     },
     {
@@ -87,9 +87,15 @@ const ProjectsPage = () => {
   return (
     <section className="projects py-12 mx-4 md:mx-16 text-center">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mb-3 text-purple-700">My Works</h1>
+        <h1 className="text-4xl font-bold mb-3 text-purple-700">My Projects</h1>
         <hr className="mx-auto w-1/2 border-t-2 border-steelBlue" />
         <hr className="mx-auto w-1/3 border-t-2 border-steelBlue my-4" />
+
+        {/* 🟢 Free Tier Warning Note */}
+        <div className="bg-lavender text-purple-800 p-4 mx-auto max-w-3xl mb-8 rounded-lg shadow-sm text-sm md:text-base text-left border-l-4 border-purple-500">
+          <strong>⏳ Quick Note:</strong> The backend services for my full-stack applications are hosted on free tiers. They go into 'sleep mode' after a period of inactivity. Please allow <strong>30-50 seconds</strong> for the data to load on your first interaction. Thank you for your patience!
+        </div>
+
         <div className="flex flex-wrap justify-center">
           {projects.map((project, index) => (
             <article
@@ -107,24 +113,26 @@ const ProjectsPage = () => {
                 <div className="card-body p-4 flex flex-col flex-grow text-center">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="card-text text-gray-700 mb-6 flex-grow">{project.description}</p>
+                  
+                  {/* 🟢 Buttons Swapped (Live Site first, then Source Code) */}
                   <div className="flex justify-center space-x-4 mt-auto">
-                    <a
-                      href={project.sourceCode}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn bg-purple-500 text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition"
-                      aria-label={`Source code for ${project.title}`}
-                    >
-                      Source Code
-                    </a>
                     <a
                       href={project.liveSite}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn bg-purple-500 text-white hover:bg-gray-700 px-4 py-2 rounded-lg transition"
+                      className="btn bg-purple-500 text-white hover:bg-purple-700 px-4 py-2 rounded-lg transition shadow-md"
                       aria-label={`Live site for ${project.title}`}
                     >
                       Live Site
+                    </a>
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn bg-gray-600 text-white hover:bg-gray-800 px-4 py-2 rounded-lg transition shadow-md"
+                      aria-label={`Source code for ${project.title}`}
+                    >
+                      Source Code
                     </a>
                   </div>
                 </div>
