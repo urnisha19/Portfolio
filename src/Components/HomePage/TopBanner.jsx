@@ -33,7 +33,7 @@ const TopBanner = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-rebeccapurple font-bold animate-pulse text-xl md:text-2xl"
+          className="text-rebeccapurple font-bold text-xl md:text-2xl"
         >
           Full-Stack Web Developer
         </motion.h4>
