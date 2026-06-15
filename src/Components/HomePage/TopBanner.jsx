@@ -24,7 +24,8 @@ const TopBanner = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-40 md:w-48 mx-auto my-4 rounded-lg shadow-lg object-cover"
+          // 🟢 হোভার ইফেক্ট অ্যাড করা হয়েছে (hover:scale-105)
+          className="w-40 md:w-48 mx-auto my-4 rounded-lg shadow-lg object-cover transition-transform duration-300 hover:scale-105"
           src={profile}
           alt="Nahia Nowreen Urnisha Profile"
         />
@@ -42,10 +43,9 @@ const TopBanner = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mx-auto mt-4 font-medium text-lg max-w-3xl text-gray-700"
+          // 🟢 leading-relaxed অ্যাড করা হয়েছে সুন্দর রিডেবিলিটির জন্য
+          className="mx-auto mt-4 font-medium text-lg max-w-3xl text-gray-700 leading-relaxed"
         >
-          {/* I am a Web Developer dedicated to continuous learning and self-development. 
-          I believe web development allows me to showcase my creativity by leveraging my skills and talents effectively. */}
           A passionate Full-Stack Web Developer, specializing in building
           secure, scalable applications using the MERN stack and developing
           custom B2B portals with Odoo ERP.
@@ -62,7 +62,8 @@ const TopBanner = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border-2 border-rebeccapurple text-lg font-semibold px-6 py-2 rounded-md hover:bg-rebeccapurple hover:text-white transition-colors duration-300">
+            {/* 🟢 হোভার শ্যাডো (hover:shadow-lg) অ্যাড করা হয়েছে */}
+            <button className="border-2 border-rebeccapurple text-lg font-semibold px-6 py-2 rounded-md hover:bg-rebeccapurple hover:text-white hover:shadow-lg transition-all duration-300">
               Resume
             </button>
           </a>
