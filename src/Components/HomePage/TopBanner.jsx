@@ -1,13 +1,17 @@
-import { faGithubSquare, faLinkedin, faMediumM } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from 'framer-motion';
-import profile from '../../assets/profile.jpg';
+import {
+  faGithubSquare,
+  faLinkedin,
+  faMediumM,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
+import profile from "../../assets/profile.jpg";
 
 const TopBanner = () => {
   return (
     <section className="bg-white py-12 overflow-hidden">
       <div className="container mx-auto text-center px-4">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -25,7 +29,7 @@ const TopBanner = () => {
           alt="Nahia Nowreen Urnisha Profile"
         />
 
-        <motion.h4 
+        <motion.h4
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -34,17 +38,20 @@ const TopBanner = () => {
           Full-Stack Web Developer
         </motion.h4>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mx-auto mt-4 font-medium text-lg max-w-3xl text-gray-700"
         >
-          I am a Web Developer dedicated to continuous learning and self-development. 
-          I believe web development allows me to showcase my creativity by leveraging my skills and talents effectively.
+          {/* I am a Web Developer dedicated to continuous learning and self-development. 
+          I believe web development allows me to showcase my creativity by leveraging my skills and talents effectively. */}
+          A passionate Full-Stack Web Developer, specializing in building
+          secure, scalable applications using the MERN stack and developing
+          custom B2B portals with Odoo ERP.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -61,16 +68,33 @@ const TopBanner = () => {
           </a>
         </motion.div>
 
-        <p className="text-center mt-8 mb-4 font-semibold text-gray-600">Let's Connect</p>
+        <p className="text-center mt-8 mb-4 font-semibold text-gray-600">
+          Let's Connect
+        </p>
 
         <div className="flex justify-center space-x-6 text-gray-600">
-          <a href="https://www.linkedin.com/in/urnisha199/" target="_blank" rel="noopener noreferrer" className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]">
+          <a
+            href="https://www.linkedin.com/in/urnisha199/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/urnisha19" target="_blank" rel="noopener noreferrer" className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]">
+          <a
+            href="https://github.com/urnisha19"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]"
+          >
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>
-          <a href="https://medium.com/@urnisha09" target="_blank" rel="noopener noreferrer" className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]">
+          <a
+            href="https://medium.com/@urnisha09"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl transition-transform duration-500 hover:text-rebeccapurple hover:rotate-[360deg]"
+          >
             <FontAwesomeIcon icon={faMediumM} />
           </a>
         </div>
