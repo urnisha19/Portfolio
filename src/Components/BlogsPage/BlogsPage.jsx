@@ -20,7 +20,8 @@ const BlogsPage = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data.items);
+        // Updated: undefined asle jate empty array set hoy
+        setBlogs(data.items || []);
         setLoading(false);
       })
       .catch((error) => {
@@ -41,7 +42,9 @@ const BlogsPage = () => {
   return (
     <div className="mx-16 mt-8">
       <h1 className="text-4xl font-bold text-center text-purple-700 mb-4">My Recent Blogs</h1>
-      {blogs.length === 0 ? (
+      
+      {/* Updated: optional chaining check kora hoyeche */}
+      {(!blogs || blogs.length === 0) ? (
         <p className="text-center text-lg text-gray-600">
           No blogs found. Please check back later.
         </p>
@@ -66,7 +69,7 @@ const BlogsPage = () => {
                   className="text-sm text-gray-600 mt-2"
                   dangerouslySetInnerHTML={{
                     __html:
-                      blog.description.substring(0, 120).replace(/<[^>]+>/g, "") +
+                      (blog.description || "").substring(0, 120).replace(/<[^>]+>/g, "") +
                       "...",
                   }}
                 />
