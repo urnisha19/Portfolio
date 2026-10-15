@@ -19,7 +19,7 @@ const ProjectsPage = () => {
       image: hsCollection,
       tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Cloudinary"],
       sourceCode: "", // private (commercial project)
-      liveSite: "", // TODO: paste the H&S live site URL
+      liveSite: "https://hs-demo.vercel.app/", // TODO: paste the H&S live site URL
     },
     {
       title: "Wholesale Bag BD",
